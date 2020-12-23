@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    h3{
+
+        font-size:25px;
+        text-transform: capitalize;
+        color:orange;
+    
+    }
+    h2{
+        text-decoration: underline;
+        font-size:25px;
+        text-transform: uppercase;
+        color:orangered;
+        font-family:sans-serif;
+    }
+    h4{
+        text-decoration: underline;
+        text-transform: capitalize;
+        color:orange;
+        font-style: oblique;
+    }
+    button{
+        display:none;
+    }
+    #main-doc{
+        display:grid;
+        grid-template-columns: 30% 70%; 
+        
+    }
+    .main-section{
+        font-family:monospace;
+        font-size:18px;
+    }
+   
+    #navbar{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .nav-link{
+        color:orangered;
+        text-decoration: none;
+        font-size:22px;
+        padding-top:10%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+    }
+    #navigation-area{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height:80vh;
+        padding:2%;
+        left:0px;
+        top:0px;
+        position:sticky;
+
+    }
+    #tutorial{
+        background: rgba(223, 94, 39, 0.077);
+        padding-left:2%;
+        padding-right:4%;
+    }
+    #tutorial p{
+        text-align: justify;
+    }
+    @media (max-width:820px){
+        body{
+            margin:0px;
+            width:100%;
+        }
+        #main-doc{
+        display:flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        color:orangered;
+        text-decoration: none;
+        font-size:22px;
+        padding-top:6%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+    }
+    #navigation-area{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height:100vh;
+        padding:2%;
+        position:relative;
+        background: rgba(224, 159, 135, 0.073);
+    }
+
+    button{
+            display:block;
+            bottom:0px;
+            position:sticky;
+        }
+     button a{
+            font-family:verdana;
+            font-size:20px;
+            text-decoration: none;
+        }
+    }
+
+</style>
+<body>
+    <main id="main-doc">
+        <div id="navigation-area">
+            
+            <nav id="navbar">
+                <header>
+                    <h2>C programming</h2>
+                </header>
+                <a href="#intro" class="nav-link">Introduction</a>
+                <a href="#objectives" class="nav-link">Objectives of this course</a>
+                <a href="#c_and_c++" class="nav-link">C and C++</a>
+                <a href="#structure" class="nav-link">Structure of C language</a>
+                <a href="#hello_world_in_c" class="nav-link">Hello World In C</a>
+                <a href="#data_types" class="nav-link">Data types in C programming</a>
+                <a href="#comments" class="nav-link">Comments In C</a>
+                <a href="#variables" class="nav-link">Variables In C</a>
+                <a href="#keywords" class="nav-link">Keywords in C</a>
+            </nav>
+        </div>
+        <div id="tutorial">
+            <h2>INTRODUCTION TO C PROGRAMMING</h2>
+            <section class="main-section">
+                <header>
+                    <h3 id="intro">Introduction</h3>
+                    <hr>
+                </header>
+                <article>
+                    <article>
+                        <p>C is a high level programming language that was developed at <abbr>AT</abbr> and T's Bell Labin in USA in 1972, it was designed and written by a man named Dennis Ritchie, it was initially designed to develop the UNIX Operating System.</p>
+                        <p>Mjor popular operating systems like windows, linux and unix have parts written in C because when it comes to speed and performance, no language can beat C</p>
+                    </article>
+                </article>
+            </section>
+            <section class="main-section">
+                <hr>
+                <header>
+                    <h3 id="objectives">objectives of this course</h3>
+                    <hr>
+                </header>
+                <article>
+                    <p>By the end of this course, the following is expected of you
+                        <ul>
+                            <li>Be able to differentiate between C and C++</li>
+                            <li>Understand the structure of C langauge</li>
+                            <li>Be able to write simple C programs like Hello World or even print your name on the screen</li>
+                            <li>Know how to comment your C programs using both single line and multiline comments.</li>
+                            <li>Know the major/primary data types in C language</li>
+                            <li>Be able to declare variables in C language and initialise them.</li>
+                            <li>Know the keywords in C langauge</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="c_and_c++">DIfferences between C and C++</h3>
+                    <hr>
+                </header>
+                <article>
+                    <p>Though they both have that letter C, C and C++ are not similiar, they have the following diffrences
+                        <ol>
+                            <li>C was developed by Dennis Ritchiein 1972 while C++ was developed by Bjarne Stroustrup in around 1979</li>
+                            <li>C is a procedural programming language while C++ supports both object oriented and procedural programming paradigms</li>
+                            <li>As C does not support the OOPs concept so it has no support for polymorphism, encapsulation, and inheritance while C++ has support for polymorphism, encapsulation, and inheritance as it is being an object-oriented programming language</li>
+                            <li>As C does not support encapsulation so data behave as a free entity and can be manipulated by outside code while  in the case of C++ encapsulation hides the data to ensure that data structures and operators are used as intended.</li>
+                            <li>C in general known as function-driven language while C++ is known as object driven language.</li>
+                        </ol>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="structure">Structure of the C language</h3>
+                    <hr>
+                </header>
+                <article>
+                    <p>Below is a skeleton structure of the C langauge and every C program must follow this flow:<br><br>
+                        <code>
+                           <mark>preprocessor directive<br>Globall variable declaration(optional)<br>main function(){<br>//codes/syntax<br>return type<br>}</mark>
+                        </code>
+                    </p>
+                    <h4>preprocessor directive</h4>
+                    <p>It tells the compiler of the type of header file(s) to be used in the program, usually started by #include and the inside 
+                        opening and closing angle brackets, we write the <mark>header file</mark> with a dot h, for example, to include the input 
+                        output header file, we write <code><mark>#include &lt;stdio.h&gt;</mark></code>this will tell the compiler tom include standardinput output header files.
+                    </p>
+                    <h4>Global variable declaration</h4>
+                    <p>In almost all programming languages, you will find two types of variables, LOCAL VARIABLES and GLOBAL VARIABLES, local variables are variables 
+                        that are created inside and used inside a function (<i>we will talk more about functions later if you have no idea of what they are</i>) while global variables are variables
+                        that are created outside functions and can be used anywhere in the program in any function, in C programming, all global variables should come immeadiately after the preprocessor directive just as shown in the skeleton structure.
+                    </p>
+                    <h4>The main function</h4>
+                    <p>It is an inbuilt function in C programming where "the actual execution of program takes place", it is enclosed with a pair of curly brackets and it can be anywhere in the program,
+                        however, all your C programs should have <strong>only one main function.</strong>
+                    </p>
+                    <p>inside the main function is now where all our C codes come in and where functions are called.<br>Lastly, all C statements must be terminated with a semi colon except the preprocessor directive and the main function</p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="hello_world_in_c">Hello world in C</h3>
+                    <hr>
+                </header>
+                <article>
+                    <mark><code>#include &lt;stdio.h&gt;<br>int main(){<br>printf("Hello wolrd");<br>return 0;<br>}</code></mark>
+                    <p>remember, all C statements inside the main function or any other function must be terminated with a semi colon</p>
+                    <h4>printf() function</h4>
+                    <p>This function is used to printtext or information to the console, the syntax is to write what you want printed on the console inside the circle brackets enclosed with double quotes.</p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="data_types">Data types in C programmimg</h3>
+                    <hr>
+                </header>
+                <article>
+                   <p> This refers to an extensive system for declaring variables and functions of different types before using them<br>
+                The data type determines how much space is occupied in storage by a variable, function etc.<br>
+                C has 4 data types:
+                <ol>
+                    <li>Basic/built in data types
+                        <ul>
+                            <li>int------means integer, stores non-decimal numbers</li>
+                            <li>double---stores decimal values only</li>
+                            <li>float----works similar to double, only that it can store non-decimal numbers to</li>
+                            <li>char-----stores single characters only eg 'A', '4', '+' etc</li>
+                        </ul>
+                    </li>
+                    <li>Enumeration data type: (enum)</li>
+                    <li>Derived data type
+                        <ul>
+                            <li>pointers</li>
+                            <li>array</li>
+                            <li>structure</li>
+                            <li>union</li>
+                        </ul>
+                    </li>
+                    <li>void data type: (void)</li>
+                </ol>
+                </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="comments">comments in C programming</h3>
+                    <hr>
+                </header>
+                <article>
+                    <p>A comment is a line of code that cannot be read or executed by the compiler, in other words, the compiler becomes blind upon seeing any comment and is able to see again when it comes out of the comment, it is as if that line of code never exists, comments are a great way to debug our code in that, when your code has an error and the compiler is telling you that a certain line has an error, instead of rushing to delete that line of code, just comment it out since you have maybe forgotten what the line of code was supposed to do, we can also use comments to tell other programmers what our code does so that when they reading through our code, instead of figuring out on themselves what the code does, they just see that throught the comments we created for them. There are two types of comments in C, <b>single line comments denoted by // and multiline comments denoted by /* and */</b><br>example in program</p>
+                    <mark><code>#include &lt;stdio.h&gt;<br>int main(){<br>printf("my name is Zaphenath Paneah");//i used this line of code to print my name to the screen<br>return 0;<br>/*this code was written<br>by me to print my name <br> to the screen in an easy way*/<br>}</code></mark>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="variables">Variables in C programming</h3>
+                    <hr>
+                </header>
+                <article>
+                    <p><strong>A Variable</strong> is a data name which is used to store some data value or storing program computations and results.</p>
+                    <p>In any programming language, before using a variable, you must <b>DECLARE</b> and <b>INITIALISE</b> it, declaration is the most important as initialisation can be done anywhere anytime.</p>
+                    <h4>Variable declaration in C programming</h4>
+                    <p>To declare a variable in C programming, we start with the data type of the variable, followed by the name of the variable terminated by a semicolon.</p>
+                    <p>The data type should reflect what the variable is supposed to hold, for example if you want to store a digit, you use int, if you want a character, you use char, etc.</p>
+                    <br>example<br><mark>int number;</mark><br>in this example, we have created a variable called number which is used for holding non-decimal values, since we have given it the data type of int, we have then terminated with a semi-colon, always remember this rule.
+                    <h4>Rules for giving variable names in C</h4>
+                    <p>In our example above, number is our variable name; there are several rules that govern the "making" of these names in C programming as follows:
+                        <ol>
+                            <li>Variable names should not start with numbers or be purely made up of numbers, for example;
+                                <ul>
+                                    <li>int 123;-------is wrong</li>
+                                    <li>int 1number;------is wrong.</li>
+                                    <li>int number1;--------is right</li>
+                                </ul>
+                            </li>
+                            <li>Variable names should not have any special characters apart from underscore, for example;
+                                <ul>
+                                    <li>char student-grade;------is wrong</li>
+                                    <li>char student.grade;--------is wrong</li>
+                                    <li>char student_grade; --------is correct</li>
+                                </ul>
+                            </li>
+                            <li>Variable name should not contain spaces, for example;
+                                <ul>
+                                    <li>char student grade;-------is wrong</li>
+                                    <li>char studentgrade;-------is correct</li>
+                                </ul>
+                            </li>
+                            <li>Variable names should not be keywords, for example;
+                                <ul>
+                                    <li>int double;-------is wrong</li>
+                                    <li>int float;--------is also wrong</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </p>
+                    <h4>Variable initialisation in C programming</h4>
+                    <p>Initialising a variable refers to assigning an initial value to a variable you have created/declared.</p>
+                    <p>The syntax is to declare the variable in a normal way but instead of terminating it with a semi colon, you write the assignment operator (=) and write th value of the variable to the right side and then terminate with a semi-colon, for example
+                        <br>int number=10;<br>char grade='A';<br>
+                        You can also declare a variable in the normal way then initialise it later as shown:<br>int num;<br>num=10;<br>
+                        <p>C does not support string data type, therefore, to declare a string variable, we use char following the procedure below:<br>
+                        <ol>
+                            <li>write the char keyword.</li>
+                            <li>write your variable name followed by square brackets, inside the square brackets, write hoe many character the dtring should hold.</li>
+                            <li>If you are just declaring, terminate with a semicolon but to initialise, write the assignment operator, then write the value inside double quotes, for example.
+                                <ul>
+                                    <li>char name[6]="dennis";</li>
+                                    <li>char studentName[30];</li>
+                                    <li>char programmer[9]="zaphenath";</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        </p>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <section class="main-section">
+                <header>
+                    <h3 id="keywords">Keywords in C programming</h3>
+                    <hr>
+                </header>
+                <p>keywords are words that are reserved for doing specific purposes, these words are predefined and are always written in lowercase , they cannot be used for anything else.
+                    keywords in C are int, short, signed, unsigned, default, volatile, float, long, double, break, continue, typedef, static, do, for, union, return, while, extern, register, enum, case, goto, struct, char, auto, etc.</p>
+            </section>
+        </div>
+    </main>
+    <button><a href="#navigation-area">Back to navigation menu</a></button>
+</body>
+<footer>
+   
+</footer>
+</html>
